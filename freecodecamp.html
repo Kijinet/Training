@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="freecodecamp.css">
+    <title >survey-form.freecodecamp.rocks</title>
+</head>
+<body>
+    <form id="survey-form">
+    <label>
+        <div>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform </p>
+        </div>
+    </label>
+    <fieldset>
+        <label for="name" id="name-label">
+            <div>
+                <p>Name</p>
+                <input id="name"  type="text" placeholder="Enter your name" required>
+            </div>
+    
+        </label>
+        <label for="email" id="email-label">
+            <div>
+                <p>Email</p>
+                <input type="email" id="email"  placeholder="Enter your email" required>
+            </div>
+        </label>
+        <label for="number" id="number-label">
+            <div>
+                <p>Age</p>
+                <input type="number" id="number" min="16" max="100" placeholder="Age" required>
+            </div>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <label>
+            <div>
+                <p>Which option best describes your current role?</p>
+                <select name="role" id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </label>
+    </fieldset>
+    <fieldset>    
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="definitely">
+                <input class="inline" type="radio" name="definitely" id="definitely" value="definitely" checked>Definitely</label>
+            <label for="maybe">
+                <input class="inline" type="radio" name="maybe" id="maybe" value="maybe">Maybe</label>
+             <label for="not-sure">
+                <input class="inline" type="checkbox" name="not-sure" id="not-sure" value="not-sure">Not sure</label>
+    </fieldset>
+    <fieldset>    
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="definitely">
+            <input class="inline" type="radio" name="definitely" id="definitely" value="definitely" checked>Definitely</label>
+        <label for="maybe">
+            <input class="inline" type="radio" name="maybe" id="maybe" value="maybe">Maybe</label>
+         <label for="not-sure">
+            <input class="inline" type="checkbox" name="not-sure" id="not-sure" value="not-sure">Not sure</label>
+</fieldset>
+    <fieldset>
+        <label>
+            <div>
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select name="favorite" id="most-like">
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>
+            <div>
+                <label>
+                    <input type="checkbox" name="like" id="like" value="like">Like to receive updates about freeCodeCamp
+                </label>
+                <label>
+                    <input type="checkbox" name="front-end" id="front-end" value="front-end">Front-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" name="back-end" id="back-end" value="back-end">Back-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" name="data-visualization" id="data-visualization" value="data-visualization">Data Visualization
+                 </label>
+                  <label>
+                <input type="checkbox" name="challenges" id="challenges" value="challenges">Challenges
+                  </label>    
+                </div>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>
+            <div>
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            </div>
+        </label>
+    </fieldset>
+<input type="submit" id="submit" value="Submit">
+</form>
+</body>
+</html>
